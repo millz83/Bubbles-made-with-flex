@@ -1,0 +1,61 @@
+
+  body {
+    background: skyblue;
+  }
+  
+.bubble-wrap {
+    display:flex;
+    
+}
+
+
+  .bubble {
+  
+    position: relative;
+    margin: 25px auto;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: inset 3px 3px 30px 6px skyblue;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
+
+
+  
+  .bubble:before {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    background: white;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    opacity: .3;
+    width: 40px;
+    height: 70px;
+    content: '';
+  }
+  
+  .bubble:after {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    transform: rotate(30deg);
+    border-right: 20px solid white;
+    border-radius: 50%;
+    opacitY: .3;
+    width: 200px;
+    height: 210px;
+    content: '';
+  }
+
+
+  .bubble2 {
+    transform: scale(0.75);
+    align-self: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    
+      .bubble-wrap {
+        flex-direction: column;
